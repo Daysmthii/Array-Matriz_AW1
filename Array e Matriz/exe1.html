@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script>
+        var numeros = []; // Crie um array vazio
+        var somaPares = 0;
+
+        // Preencha o array com números
+        for (var i = 0; i < 20; i++) {
+            numeros.push(i + 1);
+            if ((i + 1) % 2 === 0) {
+                somaPares += (i + 1);
+            }
+        }
+
+        window.alert("Array de números: " + numeros);
+        window.alert("Soma dos números pares: " + somaPares);
+    </script>
+</head>
+<body>
+</body>
+</html>

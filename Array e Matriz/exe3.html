@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script>
+        var numLinhas = prompt("Digite o número de linhas:");
+        var numColunas = prompt("Digite o número de colunas:");
+        var matriz = [];
+
+        for (var i = 0; i < numLinhas; i++) {
+            var linha = [];
+            for (var j = 0; j < numColunas; j++) {
+                linha.push(prompt("Digite um número para a posição (" + i + "," + j + "):"));
+            }
+            matriz.push(linha);
+        }
+
+        // Exibir a matriz
+        var matrizString = "";
+        for (var i = 0; i < numLinhas; i++) {
+            for (var j = 0; j < numColunas; j++) {
+                matrizString += matriz[i][j] + " ";
+            }
+            matrizString += "\n";
+        }
+
+        window.alert("Matriz:\n" + matrizString);
+    </script>
+</head>
+<body>
+</body>
+</html>
